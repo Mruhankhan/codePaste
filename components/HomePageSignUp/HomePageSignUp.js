@@ -1,8 +1,9 @@
 import React, {useState} from 'react'
 import './HomePageSignUp.css'
 
-
 export default function HomePageSignUp() {
+
+  
 
   const [values, newValues] = useState({
     firstName:'',
