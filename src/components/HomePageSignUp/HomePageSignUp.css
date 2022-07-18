@@ -25,7 +25,24 @@ form{
     margin: auto;
 }
 
-form > input{
-    margin-top: 10rem;
-    background-color: aqua;
+form > div >input{
+    background-color: rgb(56, 136, 136);
+    border-radius: 1rem;
+    width: 15rem;
+    height: 2rem;
+    text-align: center;
 }
+
+form > div{
+     margin-top: 10rem;
+}
+form > div > button{
+    background-color: #0366fc;
+    border-radius: 1rem;
+    width:5rem;
+    height:2rem;
+}
+
+form > h1{
+    margin-top:2rem
+} 
