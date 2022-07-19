@@ -52,19 +52,19 @@ export default function HomePageSignUp() {
           <div>
          {submitted && formVaild ? <div>Thanks!</div> : null} 
         <input  type='text'  value={values.firstName} onChange={firstNameChange} placeholder='First Name' id='Name'/>
-       {submitted && !values.firstName ? <div>Please Enter Your First Name</div> : null } 
+       {submitted && !values.firstName ? <div class='div-not-entered'>Please Enter Your First Name</div> : null } 
        
         <input type='text' value={values.lastName}  onChange={lastNameChange}  placeholder='Last Name'/>
-       {submitted && !values.lastName ? <div>Please Enter Your last Name</div> : null } 
+       {submitted && !values.lastName ? <div class='div-not-entered'>Please Enter Your last Name</div> : null } 
 
         <input type='email' value={values.email}        onChange={emailChange}  placeholder='Enter Your Email'/>
-        {submitted && !values.email ? <div>Please Enter Your Email</div> : null}
+        {submitted && !values.email ? <div class='div-not-entered'> Please Enter Your Email</div> : null}
 
         <input type='text' value={values.username}      onChange={usernameChange}  placeholder='Make an Username'/>
-       {submitted && !values.username ? <div>Please Make An Username</div> : null} 
+       {submitted && !values.username ? <div class='div-not-entered'>Please Make An Username</div> : null} 
 
         <input type='password' value={values.password}  onChange={passwordChange}  placeholder='Make An Password'/>
-       {submitted && !values.password ? <div>Please Make An Password</div> : null} 
+       {submitted && !values.password ? <div class='div-not-entered'>Please Make An Password</div> : null} 
 
         <button type='submit'>Submit</button>
         </div>
