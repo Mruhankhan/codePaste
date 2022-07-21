@@ -3,8 +3,7 @@ import './HomePageSignUp.css'
 
 export default function HomePageSignUp() {
 
-  
-
+  const navigate = useNavigate()
   const [values, newValues] = useState({
     firstName:'',
     lastName:'',
@@ -42,7 +41,6 @@ export default function HomePageSignUp() {
       setFormValid(true)
     }
       setSubmitted(true)
-  
   }
 
   return (
@@ -50,7 +48,7 @@ export default function HomePageSignUp() {
         <form  onSubmit={sumbitForm}>
         <h1>Welcome to codePaste</h1>
           <div>
-         {submitted && formVaild ? <div>Thanks!</div> : null} 
+         {submitted && formVaild ? <></> : null} 
         <input  type='text'  value={values.firstName} onChange={firstNameChange} placeholder='First Name' id='Name'/>
        {submitted && !values.firstName ? <div class='div-not-entered'>Please Enter Your First Name</div> : null } 
        
