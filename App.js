@@ -1,10 +1,10 @@
 import React from 'react'
-import BeforeHomePage from './src/components/beforeHomePage'
+import HomePage from './src/components/HomePage'
 
 export default function App() {
   return (
     <>
-    <BeforeHomePage></BeforeHomePage>
+    <HomePage></HomePage>
     </>
   )
 }
