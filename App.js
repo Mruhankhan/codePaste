@@ -1,9 +1,10 @@
 import React from 'react'
-import HomePageSignUp from './src/components/HomePageSignUp/HomePageSignUp'
+import BeforeHomePage from './src/components/beforeHomePage'
+
 export default function App() {
   return (
     <>
-    <HomePageSignUp/>
+    <BeforeHomePage></BeforeHomePage>
     </>
   )
 }
