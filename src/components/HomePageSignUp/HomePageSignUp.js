@@ -3,7 +3,6 @@ import './HomePageSignUp.css'
 
 export default function HomePageSignUp() {
 
-  const navigate = useNavigate()
   const [values, newValues] = useState({
     firstName:'',
     lastName:'',
