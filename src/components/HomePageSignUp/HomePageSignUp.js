@@ -49,21 +49,21 @@ export default function HomePageSignUp() {
           <div>
          {submitted && formVaild ? <></> : null} 
         <input  type='text'  value={values.firstName} onChange={firstNameChange} placeholder='First Name' id='Name'/>
-       {submitted && !values.firstName ? <div class='div-not-entered'>Please Enter Your First Name</div> : null } 
+       {submitted && values.firstName.length < 4 ? <div class='div-not-entered'>Add 4 Or More Characters</div> : null }
        
         <input type='text' value={values.lastName}  onChange={lastNameChange}  placeholder='Last Name'/>
-       {submitted && !values.lastName ? <div class='div-not-entered'>Please Enter Your last Name</div> : null } 
+       {submitted && values.lastName.length < 4 ? <div class='div-not-entered'>Username needs 4 Or More Characters</div> : null } 
 
         <input type='email' value={values.email}        onChange={emailChange}  placeholder='Enter Your Email'/>
         {submitted && !values.email ? <div class='div-not-entered'> Please Enter Your Email</div> : null}
 
         <input type='text' value={values.username}      onChange={usernameChange}  placeholder='Make an Username'/>
-       {submitted && !values.username ? <div class='div-not-entered'>Please Make An Username</div> : null} 
+       {submitted && values.username.length < 4 ? <div class='div-not-entered'>Please Enter More Then 4 Characters</div> : null} 
 
         <input type='password' value={values.password}  onChange={passwordChange}  placeholder='Make An Password'/>
-       {submitted && !values.password ? <div class='div-not-entered'>Please Make An Password</div> : null} 
+       {submitted && values.password.length < 4 ? <div class='div-not-entered'>Password needs To be atleast 4 Characters </div> : null} 
 
-        <button type='submit'>Submit</button>
+        <button type='submit'>Sign Up!</button>
         </div>
         </form>
     </>
