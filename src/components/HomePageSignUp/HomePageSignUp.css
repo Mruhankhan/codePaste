@@ -7,6 +7,7 @@
 }
 
 body{
+  
     background-color: #003583; 
     display: flex;
     align-items: center;
@@ -38,6 +39,9 @@ form > div >input{
 
 form > div{
      margin-top: 10rem;
+     animation-name: whole-animation;
+     animation-duration: 4s;
+     animation-iteration-count: 1;
 }
 form > div > button{
     background-color: #0366fc; 
@@ -47,6 +51,9 @@ form > div > button{
 }
 
 form > h1{
+    animation-name: whole-animation;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
     font-family: 'Shadows Into Light', cursive;
     margin-top:2rem;
     font-size: 4rem;
@@ -55,3 +62,10 @@ form > h1{
 .div-not-entered{
     color: red ;
 }
+
+@keyframes whole-animation{
+    10% {
+      margin-left: 6rem;
+    }
+  }
+  
